@@ -138,7 +138,7 @@ document.getElementById('submit').addEventListener('click',function(){
 
   // Right side bar/ answer section
   let x = setTimeout(() => {
-    displayAnswers(answers);
+    showAnswers(answers);
     displayResult.innerHTML += `<div
     class="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
   >
@@ -158,7 +158,7 @@ document.getElementById('submit').addEventListener('click',function(){
   ${
     storage
       ? `<div class="mt-5">
-      <h1 class="text-center">Previous Submissions <button class="text-blue-800 text-xs" onclick={localStorage.clear();location.reload()}>Clear History</button></h1>
+      <h1 class="text-center">Previous Submissions <button class="text-blue-800 text-xs" onclick='{localStorage.clear();location.reload()}'>Clear History</button></h1>
     <div
     class="flex justify-between items-center border rounded p-2 my-2 shadow-sm font-medium">
     <div>Marks</div>
