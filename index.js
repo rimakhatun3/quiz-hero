@@ -138,8 +138,8 @@ document.getElementById('submit').addEventListener('click',function(){
 
   // Right side bar/ answer section
   let x = setTimeout(() => {
-    showAnswers(answers);
-    displayResult.innerHTML = `<div
+    displayAnswers(answers);
+    displayResult.innerHTML += `<div
     class="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
   >
     <h3 class="text-xl ${grade.color}">${grade.status}</h3>
@@ -185,3 +185,8 @@ document.getElementById('submit').addEventListener('click',function(){
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+document.getElementById('btn-blog').addEventListener('click',function(){
+  console.log('please add')
+  window.location.href ='indexb.html'
+})
