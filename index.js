@@ -139,7 +139,7 @@ document.getElementById('submit').addEventListener('click',function(){
   // Right side bar/ answer section
   let x = setTimeout(() => {
     showAnswers(answers);
-    displayResult.innerHTML += `<div
+    displayResult.innerHTML = `<div
     class="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
   >
     <h3 class="text-xl ${grade.color}">${grade.status}</h3>
